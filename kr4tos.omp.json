@@ -1,0 +1,49 @@
+{
+  "blocks": [
+    {
+      "type": "rprompt"
+    },
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#1ad2f2",
+          "style": "plain",
+          "template": "\udb82\udc9a ",
+          "type": "text"
+        },
+        {
+          "background": "#77E4F7",
+          "foreground": "#000000",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ end }}{{ end }}venv <transparent>\ue0b6</>",
+          "type": "python"
+        },
+        {
+          "foreground": "#7019f2",
+          "options": {
+            "style": "full"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#FFE700",
+          "style": "plain",
+          "template": "{{ .HEAD }} ",
+          "type": "git"
+        },
+        {
+          "foreground": "#5c645a",
+          "style": "plain",
+          "template": "\udb82\udf5f ",
+          "type": "text"
+        }
+              ],
+      "type": "prompt"
+    }
+      ],
+  "version": 4
+}
